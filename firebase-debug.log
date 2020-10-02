@@ -1,0 +1,45 @@
+[debug] [2018-03-17T22:42:57.507Z] ----------------------------------------------------------------------
+[debug] [2018-03-17T22:42:57.512Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-03-17T22:42:57.513Z] CLI Version:   3.17.6
+[debug] [2018-03-17T22:42:57.513Z] Platform:      win32
+[debug] [2018-03-17T22:42:57.513Z] Node Version:  v8.10.0
+[debug] [2018-03-17T22:42:57.514Z] Time:          Sun Mar 18 2018 03:42:57 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-03-17T22:42:57.515Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-17T22:42:57.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-17T22:42:57.552Z] > authorizing via signed-in user
+[debug] [2018-03-17T22:42:57.556Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-17T22:42:57.557Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/yJjGZ8zgbIytyL34PUqYs8wgu3gvgIa0eSj-4o_3hr0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Mar 18 2018 03:42:57 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-03-17T22:42:58.698Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-17T22:42:58.868Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/azam-4290f  
+  
+ Sun Mar 18 2018 03:42:58 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-03-17T22:42:59.998Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-17T22:43:00.000Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/azam-4290f/tokens  
+  
+ Sun Mar 18 2018 03:43:00 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-03-17T22:43:00.990Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'azam-4290f'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-17T22:43:02.942Z] Error: ENOENT: no such file or directory, open 'C:\Users\kacho raja\Desktop\firebase\"E:\Java\jdk1.8.0_45;";\firebase-upload-61722oAnJjSL13zv.tar.gz'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fileSync (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\tmp\lib\tmp.js:269:15)
+    at module.exports (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\lib\prepareUpload.js:18:21)
+    at module.exports (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:23:10)
+    at _chain (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:45)
+    at C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:79:12
+    at tryCatch (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:525:12)
+    at invokeCallback (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:538:13)
+    at publish (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:508:7)
+    at flush (C:\Users\kacho raja\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rsvp\dist\rsvp.js:2415:5)
+[error] 
+[error] Error: An unexpected error has occurred.
